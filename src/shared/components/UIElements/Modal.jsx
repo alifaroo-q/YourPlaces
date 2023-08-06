@@ -16,18 +16,18 @@ const ModalOverlay = ({
 }) => {
   const content = (
     <Stack
-      className={`${className} z-[100] fixed top-[10vh] left-[10%] w-4/5 bg-white shadow-lg rounded-lg`}
+      className={`${className} z-[100] fixed top-[15vh] left-[10%] w-4/5 bg-white shadow-lg rounded-lg`}
     >
       <Box
         as={"header"}
-        className={`${headerClass} w-full p-3 bg-[#2a006e] text-white`}
+        className={`${headerClass} w-full font-semibold p-3 bg-[#2a006e] text-white`}
       >
         <Text as={"h2"} fontSize={"xl"} margin={3}>
           {headerText}
         </Text>
       </Box>
       <form onSubmit={onSubmit ? onSubmit : (e) => e.preventDefault()}>
-        <Box className={`${contentClass} p-3 h-[50vh]`}>{children}</Box>
+        <Box className={`${contentClass} p-3`}>{children}</Box>
         <Box as={"footer"} className={`${footerClass} p-3`}>
           {footerContent}
         </Box>

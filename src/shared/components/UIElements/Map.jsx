@@ -16,7 +16,7 @@ const Map = ({ className, center, zoom }) => {
     });
   }, [center, zoom]);
 
-  return <Box ref={mapRef} className={`h-full ${className}`}></Box>;
+  return <Box ref={mapRef} className={`h-[50vh] ${className}`}></Box>;
 };
 
 export default Map;

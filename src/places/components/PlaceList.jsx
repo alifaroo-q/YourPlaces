@@ -16,10 +16,12 @@ const PlaceList = ({ places }) => {
       <Center>
         <Card>
           <CardBody>
-            <Stack alignItems={"center"}>
-              <Text>No places found. Maybe create a one?</Text>
+            <Stack alignItems={"center"} spacing={5}>
+              <Text fontSize={"lg"} fontWeight={"md"}>
+                No places found. Maybe create a one?
+              </Text>
               <Link to="/places/new">
-                <Button>Share Place</Button>
+                <Button colorScheme="red">Share Place</Button>
               </Link>
             </Stack>
           </CardBody>
